@@ -12,4 +12,6 @@ void keypad_tick();
 
 byte keypad_get();
 
+void keypad_set_debounce_time(uint16_t time);
+
 #endif

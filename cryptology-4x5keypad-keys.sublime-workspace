@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"s_serial_",
+				"s_serial_idx"
+			],
+			[
+				"uin",
+				"uint16_t"
+			],
+			[
+				"s_de",
+				"s_debounce_time_address"
+			],
+			[
+				"s_ser",
+				"s_serial_buffer"
+			],
+			[
 				"button",
 				"buttons_get"
 			],
@@ -70,10 +86,6 @@
 			[
 				"TIMER_",
 				"TIMER_RELOAD_DEBUG"
-			],
-			[
-				"s_de",
-				"s_debug_mode_entry"
 			],
 			[
 				"s_pwm",
@@ -439,7 +451,7 @@
 			"file": "cryptology-4x5keypad-keys.ino",
 			"settings":
 			{
-				"buffer_size": 1344,
+				"buffer_size": 3221,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -448,24 +460,8 @@
 			"file": "game_keypad.cpp",
 			"settings":
 			{
-				"buffer_size": 1804,
+				"buffer_size": 1892,
 				"encoding": "UTF-8",
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/james/Arduino/libraries/Keypad/src/Keypad.cpp",
-			"settings":
-			{
-				"buffer_size": 9353,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/home/james/Arduino/libraries/Keypad/src/Keypad.h",
-			"settings":
-			{
-				"buffer_size": 5612,
 				"line_ending": "Unix"
 			}
 		},
@@ -473,7 +469,7 @@
 			"file": "game_keypad.h",
 			"settings":
 			{
-				"buffer_size": 196,
+				"buffer_size": 243,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
 			}
@@ -515,6 +511,8 @@
 	],
 	"file_history":
 	[
+		"/home/james/Arduino/libraries/Keypad/src/Keypad.h",
+		"/home/james/Arduino/libraries/Keypad/src/Keypad.cpp",
 		"/home/james/Arduino/libraries/Keypad/src/Key.cpp",
 		"/home/james/Arduino/libraries/Keypad/src/Key.h",
 		"/home/james/code/cryptology/cryptology-4x5keypad-keys/keypad.h",
@@ -640,9 +638,7 @@
 		"/home/james/code/TimeTracker/TimeTracker/static/view.css",
 		"/home/james/code/TimeTracker/TimeTracker/templates/Addresses.csv",
 		"/media/james/boot/config.txt",
-		"/media/james/boot/cmdline.txt",
-		"/home/james/Downloads/AmarinoLibrary_v0_55/at/abraxas/amarino/Amarino.java",
-		"/home/james/Downloads/AmarinoLibrary_v0_55/at/abraxas/amarino/AmarinoIntent.java"
+		"/media/james/boot/cmdline.txt"
 	],
 	"find":
 	{
@@ -660,6 +656,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"process_command",
+			"EEPROM",
 			"st_setup",
 			"debug_task",
 			"debug_task_fn",
@@ -694,7 +692,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -703,47 +701,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1344,
+						"buffer_size": 3221,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								225,
-								225
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "game_keypad.cpp",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1804,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1050,
-								1050
+								1693,
+								1693
 							]
 						],
 						"settings":
@@ -756,27 +722,27 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 39.0,
+						"translation.y": 716.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "/home/james/Arduino/libraries/Keypad/src/Keypad.cpp",
+					"buffer": 1,
+					"file": "game_keypad.cpp",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9353,
+						"buffer_size": 1892,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								628,
-								628
+								1889,
+								1889
 							]
 						],
 						"settings":
@@ -785,62 +751,31 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/User/Stino/Arduino.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 59.0,
+						"translation.y": 748.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "/home/james/Arduino/libraries/Keypad/src/Keypad.h",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5612,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2857,
-								2857
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/C++/C++.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1157.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
+					"buffer": 2,
 					"file": "game_keypad.h",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 196,
+						"buffer_size": 243,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								132,
-								132
+								189,
+								189
 							]
 						],
 						"settings":
@@ -854,7 +789,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 2,
 					"type": "text"
 				}
 			]

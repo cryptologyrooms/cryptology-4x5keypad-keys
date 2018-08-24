@@ -81,3 +81,8 @@ byte keypad_get()
 {
     return *s_last_key;
 }
+
+void keypad_set_debounce_time(uint16_t time)
+{
+    sp_keypad->setDebounceTime(time);
+}
